@@ -316,7 +316,7 @@
     <string>Register</string>
    </property>
   </widget>
-  <widget class="QGroupBox" name="groupBox_4">
+  <widget class="QGroupBox" name="DOBGroupBox">
    <property name="geometry">
     <rect>
      <x>20</x>
