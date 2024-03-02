@@ -15,6 +15,8 @@ class LoginWindow : public QMainWindow
 
 public:
     LoginWindow(QWidget *parent = nullptr);
+    QString username;
+    int age;
     ~LoginWindow();
 
 private slots:

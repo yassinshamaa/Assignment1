@@ -31,6 +31,8 @@ void LoginWindow::on_pushButton_Login_clicked()
     for (int i = 0; i < usersCount; i++) {
         if (((ui -> lineEdit_Username -> text()) == usernames[i]) && ((ui -> lineEdit_Password -> text()) == passwords[i])) {
             foundlogin = true;
+            username = usernames[i];
+            age = ages[i];
         }
     }
     if (foundlogin == false) {
@@ -39,6 +41,7 @@ void LoginWindow::on_pushButton_Login_clicked()
     else {
         hide();
         WelcomePage* welcomePage = new WelcomePage(this);
+        welcomePage -> setValues(username, age);
         welcomePage -> show();
     }
 }

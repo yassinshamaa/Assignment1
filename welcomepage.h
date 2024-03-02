@@ -13,7 +13,13 @@ class WelcomePage : public QDialog
 
 public:
     explicit WelcomePage(QWidget *parent = nullptr);
+    void setValues(QString username, int age);
     ~WelcomePage();
+
+private slots:
+    void on_label_Picture_linkActivated(const QString &link);
+
+    void on_pushButton_Logout_clicked();
 
 private:
     Ui::WelcomePage *ui;
