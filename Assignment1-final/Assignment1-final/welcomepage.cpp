@@ -2,13 +2,14 @@
 #include "ui_welcomepage.h"
 #include "QPixmap"
 #include "loginwindow.h"
+#include "registerwindow.h"
 
 WelcomePage::WelcomePage(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::WelcomePage)
 {
     ui->setupUi(this);
-    QPixmap pix (":/resources/pics/LoginPic.jpg");
+    QPixmap pix (":/new/prefix1/pics/LoginPic.jpg");
     int w = ui -> label_Picture -> width();
     int h = ui -> label_Picture -> height();
     ui -> label_Picture -> setPixmap(pix.scaled(w, h, Qt::KeepAspectRatio));

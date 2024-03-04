@@ -28,7 +28,7 @@ void LoginWindow::on_pushButton_2_Register_clicked()
 void LoginWindow::on_pushButton_Login_clicked()
 {
     bool foundlogin = false;
-    for (int i = 0; i < usersCount; i++) {
+    for (int i = 0; i < 100; i++) {
         if (((ui -> lineEdit_Username -> text()) == usernames[i]) && ((ui -> lineEdit_Password -> text()) == passwords[i])) {
             foundlogin = true;
             username = usernames[i];
